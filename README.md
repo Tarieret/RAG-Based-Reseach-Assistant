@@ -60,6 +60,10 @@ python -m uvicorn backend.main:app --host 0.0.0.0 --port 8000
 
 streamlit run frontend/streamlit_app.py
 
+
+---
+## Project Structure
+
 RAG_Research_Assistant/
 ├── backend/main.py
 ├── frontend/streamlit_app.py
@@ -67,5 +71,6 @@ RAG_Research_Assistant/
 ├── chroma_db/
 └── requirements.txt
 
-**Notes**
-- This project is intended for research and educational use only and is not suitable for clinical or diagnostic decision-making.
+---
+## Notes:
+This project is intended for research and educational use only and is not suitable for clinical or diagnostic decision-making.
