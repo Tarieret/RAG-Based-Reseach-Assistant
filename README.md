@@ -39,27 +39,12 @@ This project implements an end-to-end RAG pipeline using a FastAPI backend and a
 - ChromaDB  
 
 **Frontend**
-- Streamlit  
 
 **Data Processing & Tooling**
 - PyPDF  
 - Git  
 - Virtual environments  
 - Environment variable management  
-
----
-
-## Quick Start
-
-```bash
-pip install -r requirements.txt
-
-export OPENAI_API_KEY="your-key-here"
-
-python -m uvicorn backend.main:app --host 0.0.0.0 --port 8000
-
-streamlit run frontend/streamlit_app.py
-
 
 ---
 ## Project Structure
@@ -74,3 +59,19 @@ RAG_Research_Assistant/
 ---
 ## Notes:
 This project is intended for research and educational use only and is not suitable for clinical or diagnostic decision-making.
+- Streamlit  
+
+---
+## Quick Start
+
+```bash
+pip install -r requirements.txt
+
+export OPENAI_API_KEY="your-key-here"
+
+python -m uvicorn backend.main:app --host 0.0.0.0 --port 8000
+
+streamlit run frontend/streamlit_app.py
+
+
+
