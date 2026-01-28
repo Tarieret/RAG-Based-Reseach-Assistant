@@ -25,26 +25,12 @@ This project implements an end-to-end RAG pipeline using a FastAPI backend and a
 - Interactive web interface  
 
 ---
-
 ## Tech Stack
 
-**Backend**
-- Python  
-- FastAPI  
-- Uvicorn  
-
-**AI / RAG**
-- OpenAI API (GPT-4o-mini, text-embedding-3-small)  
-- LangChain  
-- ChromaDB  
-
-**Frontend**
-
-**Data Processing & Tooling**
-- PyPDF  
-- Git  
-- Virtual environments  
-- Environment variable management  
+- **Backend:** Python, FastAPI, Uvicorn  
+- **AI / RAG:** OpenAI API (GPT-4o-mini, text-embedding-3-small), LangChain, ChromaDB  
+- **Frontend:** Streamlit  
+- **Data & Tooling:** PyPDF, Git, virtual environments, environment variables
 
 ---
 ## Project Structure
@@ -61,15 +47,6 @@ RAG_Research_Assistant/
 This project is intended for research and educational use only and is not suitable for clinical or diagnostic decision-making.
 - Streamlit  
 
----
-## Quick Start
-
-```bash
-pip install -r requirements.txt
-
-export OPENAI_API_KEY="your-key-here"
-
-python -m uvicorn backend.main:app --host 0.0.0.0 --port 8000
 
 streamlit run frontend/streamlit_app.py
 
