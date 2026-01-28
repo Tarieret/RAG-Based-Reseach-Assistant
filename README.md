@@ -1,5 +1,4 @@
 # RAG-Based-Reseach-Assistant
-# Medical Research RAG Assistant
 
 A Retrieval-Augmented Generation (RAG) system for natural language querying of medical research papers on brain tumor detection. Users can ask questions and receive accurate, citation-grounded answers sourced directly from peer-reviewed PDFs.
 
