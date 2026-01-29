@@ -24,7 +24,7 @@ This project implements an end-to-end RAG pipeline using a FastAPI backend and a
 - Async REST API with multi-user support  
 - Interactive web interface  
 
----
+
 ## Tech Stack
 
 - **Backend:** Python, FastAPI, Uvicorn  
@@ -32,7 +32,7 @@ This project implements an end-to-end RAG pipeline using a FastAPI backend and a
 - **Frontend:** Streamlit  
 - **Data & Tooling:** PyPDF, Git, virtual environments, environment variables
 
----
+
 ## Project Structure
 
 RAG_Research_Assistant/
@@ -45,10 +45,7 @@ RAG_Research_Assistant/
 ---
 ## Notes:
 This project is intended for research and educational use only and is not suitable for clinical or diagnostic decision-making.
-- Streamlit  
 
-
-streamlit run frontend/streamlit_app.py
 
 
 
