@@ -1,6 +1,6 @@
 # RAG-Based-Reseach-Assistant
 ![Streamlit](/Images/StreamlitDemo1.png)
-![Streamlit](/Images/StreamlitDemo3.png)
+![Streamlit](/Images/StreamlitDemo2.png)
 ![Streamlit](/Images/api-docs.png)
 A Retrieval-Augmented Generation (RAG) system for natural language querying of medical research papers on brain tumor detection. Users can ask questions and receive accurate, citation-grounded answers sourced directly from peer-reviewed PDFs.
 
