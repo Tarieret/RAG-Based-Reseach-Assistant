@@ -21,7 +21,7 @@ print("=" * 70)
 if os.path.exists("./chroma_db"):
     print("\n[1/4] Removing old database...")
     shutil.rmtree("./chroma_db")
-    print("✅ Old database removed")
+    print("Old database removed")
 
 # Step 2: Load PDFs
 print("\n[2/4] Loading PDF documents...")
@@ -32,7 +32,7 @@ loader = DirectoryLoader(
     show_progress=True
 )
 documents = loader.load()
-print(f"✅ Loaded {len(documents)} pages from PDF files")
+print(f"Loaded {len(documents)} pages from PDF files")
 
 # Step 3: Chunk documents
 print("\n[3/4] Chunking documents...")
@@ -43,11 +43,11 @@ text_splitter = RecursiveCharacterTextSplitter(
     separators=["\n\n", "\n", " ", ""]
 )
 chunks = text_splitter.split_documents(documents)
-print(f"✅ Created {len(chunks)} chunks")
+print(f"Created {len(chunks)} chunks")
 
 # Step 4: Create embeddings and vector store
 print("\n[4/4] Creating vector database...")
-print("⏳ This will take 1-2 minutes...")
+print("This will take 1-2 minutes...")
 
 embeddings = OpenAIEmbeddings(model="text-embedding-3-small")
 
@@ -57,8 +57,8 @@ vectorstore = Chroma.from_documents(
     persist_directory="./chroma_db"
 )
 
-print(f"✅ Vector database created with {len(chunks)} chunks!")
-print(f"✅ Database saved to './chroma_db'")
+print(f"Vector database created with {len(chunks)} chunks!")
+print(f"Database saved to './chroma_db'")
 
 # Step 5: Test the database
 print("\n" + "=" * 70)
@@ -79,7 +79,7 @@ for i, doc in enumerate(results, 1):
     print()
 
 print("=" * 70)
-print("✅ DATABASE REBUILD COMPLETE!")
+print("DATABASE REBUILD COMPLETE!")
 print("=" * 70)
 print("\nYou can now start the backend server:")
 print("  python -m uvicorn backend.main:app --host 0.0.0.0 --port 8000")
