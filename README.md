@@ -33,13 +33,13 @@ This project implements an end-to-end RAG pipeline using a FastAPI backend and a
 
 
 ## Project Structure
-
 RAG_Research_Assistant/
 ├── backend/main.py
 ├── frontend/streamlit_app.py
 ├── documents/
 ├── chroma_db/
 └── requirements.txt
+
 
 ---
 ## Notes:
