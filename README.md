@@ -10,8 +10,8 @@ A Retrieval-Augmented Generation (RAG) system for natural language querying of m
 This project implements an end-to-end RAG pipeline using a FastAPI backend and a Streamlit frontend. Research papers are parsed from PDF, chunked, embedded using OpenAI models, and stored in a ChromaDB vector database for semantic retrieval. Queries are answered using retrieved context with session-based conversational memory.
 
 **Dataset**
-- 20 research papers (91 pages)
-- 457 indexed text chunks
+- 20 research papers (478 pages)
+- 2184 indexed text chunks
 - Average response time: 2–5 seconds
 
 
