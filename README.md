@@ -2,9 +2,9 @@
 ![Streamlit](/Images/StreamlitDemo1.png)
 ![Streamlit](/Images/StreamlitDemo2.png)
 ![Streamlit](/Images/api-docs.png)
+
 A Retrieval-Augmented Generation (RAG) system for natural language querying of medical research papers on brain tumor detection. Users can ask questions and receive accurate, citation-grounded answers sourced directly from peer-reviewed PDFs.
 
----
 
 ## Overview
 
@@ -15,7 +15,6 @@ This project implements an end-to-end RAG pipeline using a FastAPI backend and a
 - 457 indexed text chunks
 - Average response time: 2–5 seconds
 
----
 
 ## Features
 
