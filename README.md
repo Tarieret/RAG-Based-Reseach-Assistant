@@ -32,7 +32,6 @@ This project implements an end-to-end RAG pipeline using a FastAPI backend and a
 - **Data & Tooling:** PyPDF, Git, virtual environments, environment variables
 
 
----
 ## Notes:
 This project is intended for research and educational use only and is not suitable for clinical or diagnostic decision-making.
 
