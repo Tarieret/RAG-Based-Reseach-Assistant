@@ -14,7 +14,6 @@
 An end-to-end RAG pipeline enabling natural language querying of peer-reviewed medical research papers on brain tumor detection. Users ask questions and receive accurate, citation-grounded answers sourced directly from indexed PDFs, delivered through a FastAPI backend and Streamlit frontend. The idea came out of a Spring 2025 master's-level project on deep learning for brain tumor detection from MRI images, which shifted the focus from individual models toward supporting the research workflow itself.
 
 ![Streamlit](/Images/rag-demo-full.gif)
-![FastAPI docs](/Images/api-docs.png)
 
 ## Dataset & Scale
 
