@@ -20,7 +20,7 @@ An end-to-end RAG pipeline enabling natural language querying of peer-reviewed m
 | Metric | Value |
 |---|---|
 | Research papers indexed | 20 papers (478 pages) |
-| Text chunks indexed | 2,184 |
+| Text chunks indexed | 2,183 |
 | Average response time | 2–5 seconds |
 
 ## Features
@@ -45,4 +45,4 @@ User Query → Streamlit → FastAPI → ChromaDB Retrieval → GPT-4o-mini → 
 This project is intended for research and educational use only and is not suitable for clinical or diagnostic decision-making.
 
 ## Reflection
-Grounding and citation aren't polish, they're the difference between a demo and a tool someone can actually trust with research decisions.
+Grounding and citation aren't polish, they're the difference between a demo and a tool someone can trust with research decisions.
