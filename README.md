@@ -6,14 +6,14 @@
 
 **Architecture decision:** Constrained LLM responses to retrieved context only, treating hallucination as a prompt-engineering problem to eliminate upfront rather than a downstream filtering step. Indexed content with semantic embeddings in ChromaDB instead of keyword search, since dense medical terminology needs conceptual matching, not exact-string matching. Built citation-backed responses as a core requirement rather than a nice-to-have, given the stakes of the domain. Split the system into a FastAPI backend and Streamlit frontend to support async, multi-user access rather than a single-session notebook demo.
 
-**What broke:** 
+**What broke:** Early prompt versions let the model answer from its own general medical knowledge when retrieved context was thin, producing fluent but unverifiable claims not traceable to any indexed paper. Fixed by rewriting the system prompt to explicitly refuse to answer beyond the retrieved chunks, rather than trying to filter hallucinated output after generation.
 
 **Metric:** 20 research papers (478 pages) indexed into 2,184 text chunks, with average query response time of 2–5 seconds. *[subject to change post-rerun]*
 
 ## Overview
 An end-to-end RAG pipeline enabling natural language querying of peer-reviewed medical research papers on brain tumor detection. Users ask questions and receive accurate, citation-grounded answers sourced directly from indexed PDFs, delivered through a FastAPI backend and Streamlit frontend. The idea came out of a Spring 2025 master's-level project on deep learning for brain tumor detection from MRI images, which shifted the focus from individual models toward supporting the research workflow itself.
 
-![Streamlit](/Images/rag-demo-full.gif)
+![Streamlit](/Images/rag-demo-full.gif) 
 
 ## Dataset & Scale
 
